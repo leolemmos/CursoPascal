@@ -1,0 +1,11 @@
+program EstruturaCondicional;
+var
+    idade: integer;
+begin
+    write('Digite sua idade: '); // Solicita a entrada da idade
+    readln(idade);               // Lê a idade digitada pelo usuário
+    if idade >= 18 then         // Verifica se é maior ou igual a 18
+        writeln('Você é maior de idade.')
+    else
+        writeln('Você é menor de idade.');
+end.
