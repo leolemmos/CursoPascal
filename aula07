@@ -1,0 +1,11 @@
+program Vetores;
+var
+    numeros: array[1..5] of integer; // Declaração de um vetor de inteiros
+    i: integer;
+begin
+    for i := 1 to 5 do
+        numeros[i] := i * 2; // Preenche o vetor com valores
+    writeln('Elementos do vetor:');
+    for i := 1 to 5 do
+        writeln(numeros[i]); // Exibe os elementos do vetor
+end.
