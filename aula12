@@ -1,0 +1,16 @@
+program Recursao;
+function Fatorial(n: integer): integer;
+begin
+    if n <= 1 then
+        Fatorial := 1
+    else
+        Fatorial := n * Fatorial(n - 1); // Chamada recursiva da função
+end;
+
+var
+    numero, resultado: integer;
+begin
+    numero := 5;
+    resultado := Fatorial(numero); // Chama a função recursiva
+    writeln('Fatorial de ', numero, ' é ', resultado);
+end.
