@@ -1,0 +1,12 @@
+program Funcoes;
+function Soma(a, b: integer): integer; // Declaração de uma função que retorna um inteiro
+begin
+    Soma := a + b; // Calcula a soma de a e b e retorna o resultado
+end;
+
+var
+    resultado: integer;
+begin
+    resultado := Soma(5, 3); // Chama a função Soma
+    writeln('Resultado da soma: ', resultado);
+end.
