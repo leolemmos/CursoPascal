@@ -1,0 +1,15 @@
+program OperadoresAritmeticos;
+var
+    a, b, resultado: integer;
+begin
+    a := 10;
+    b := 5;
+    resultado := a + b;  // Soma
+    writeln('Soma: ', resultado);
+    resultado := a - b;  // Subtração
+    writeln('Subtração: ', resultado);
+    resultado := a * b;  // Multiplicação
+    writeln('Multiplicação: ', resultado);
+    resultado := a div b; // Divisão inteira
+    writeln('Divisão: ', resultado);
+end.
