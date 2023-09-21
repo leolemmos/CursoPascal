@@ -1,0 +1,18 @@
+program ManipulacaoDeArquivos;
+var
+    arquivo: text;
+    linha: string;
+begin
+    assign(arquivo, 'exemplo.txt'); // Associa o arquivo 'exemplo.txt' ao manipulador 'arquivo'
+    rewrite(arquivo); // Cria ou sobrescreve o arquivo
+    writeln(arquivo, 'Este é um exemplo de arquivo.');
+    close(arquivo);
+    
+    reset(arquivo); // Abre o arquivo para leitura
+    while not eof(arquivo) do
+    begin
+        readln(arquivo, linha); // Lê uma linha do arquivo
+        writeln(linha);
+    end;
+    close(arquivo);
+end.
