@@ -1,0 +1,13 @@
+program ManipulacaoDeExcecoes;
+var
+    divisor, resultado: real;
+begin
+    divisor := 0;
+    try
+        resultado := 10 / divisor; // Tenta dividir por zero
+        writeln('Resultado: ', resultado);
+    except
+        on EZeroDivide do
+            writeln('Erro: Divisão por zero.'); // Trata a exceção de divisão por zero
+    end;
+end.
