@@ -1,0 +1,29 @@
+program OrientacaoObjetos;
+type
+    Pessoa = class
+    private
+        Nome: string;
+        Idade: integer;
+    public
+        constructor Create(Nome: string; Idade: integer); // Construtor da classe
+        procedure Apresentar; // Método público da classe
+    end;
+
+constructor Pessoa.Create(Nome: string; Idade: integer);
+begin
+    self.Nome := Nome;
+    self.Idade := Idade;
+end;
+
+procedure Pessoa.Apresentar;
+begin
+    writeln('Nome: ', Nome);
+    writeln('Idade: ', Idade);
+end;
+
+var
+    pessoa: Pessoa;
+begin
+    pessoa := Pessoa.Create('Alice', 25); // Cria um objeto da classe Pessoa
+    pessoa.Apresentar; // Chama o método Apresentar
+end.
