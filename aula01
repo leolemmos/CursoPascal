@@ -1,0 +1,5 @@
+program HelloWorld;
+begin
+    { Esta é a função principal que exibe "Hello, World!" }
+    writeln('Hello, World!');
+end.
