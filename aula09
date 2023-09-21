@@ -1,0 +1,9 @@
+program ManipulacaoDeTexto;
+var
+    frase, substring: string;
+begin
+    frase := 'Isso é uma frase de exemplo.';
+    writeln('Frase original: ', frase);
+    substring := copy(frase, 10, 6); // Copia parte da frase
+    writeln('Substring: ', substring);
+end.
