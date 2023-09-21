@@ -1,0 +1,15 @@
+program Registros;
+type
+    Pessoa = record
+        Nome: string;
+        Idade: integer;
+    end;
+
+var
+    individuo: Pessoa;
+begin
+    individuo.Nome := 'João';
+    individuo.Idade := 30;
+    writeln('Nome: ', individuo.Nome);
+    writeln('Idade: ', individuo.Idade);
+end.
