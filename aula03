@@ -1,0 +1,8 @@
+program EntradaESaida;
+var
+    nome: string;
+begin
+    write('Digite seu nome: '); // Solicita a entrada do nome
+    readln(nome);               // Lê o nome digitado pelo usuário
+    writeln('Olá, ', nome, '!'); // Exibe uma saudação com o nome
+end.
