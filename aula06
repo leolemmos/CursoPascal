@@ -1,0 +1,14 @@
+program Lacos;
+var
+    i: integer;
+begin
+    for i := 1 to 5 do         // Loop de 1 a 5
+        writeln('Contagem: ', i);
+    writeln('Laço while:');
+    i := 5;
+    while i > 0 do            // Loop enquanto i for maior que zero
+    begin
+        writeln('Contagem: ', i);
+        i := i - 1;            // Decrementa i
+    end;
+end.
